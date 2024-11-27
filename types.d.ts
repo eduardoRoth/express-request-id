@@ -4,7 +4,7 @@ import type {Request, RequestHandler} from 'express-serve-static-core';
 declare global {
 	namespace Express {
 		// Inject additional properties on express.Request
-		type Request = {
+		interface Request {
 			id: string;
 		};
 	}
